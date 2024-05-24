@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "ES2020",
+        "allowJs": true,
+        "jsx": "react",
+        "declaration": true,
+        "sourceMap": true,
+        "baseUrl": "./src",
+        "moduleResolution": "Bundler",
+        "outDir": "dist",
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true
+        // "outFile": "index.d.ts"
+    },
+    "exclude": [
+        "node_modules",
+        ".vscode",
+        "webpack",
+        "dist",
+        "./src/**/*.test.ts",
+        "./src/**/*.test.tsx",
+        "**/*.test.ts*"
+    ]
+}
