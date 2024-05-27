@@ -4,7 +4,7 @@ import { ViewedBoundsFunctionType } from './utils';
 import { Accessors } from '../ScrollManager';
 import { TNil } from '../types';
 import { Log, Span, Trace, KeyValuePair, Link } from '../types/trace';
-import TTraceTimeline from '../types/TTraceTimeline';
+import { TTraceTimeline } from '../types/TTraceTimeline';
 import { Theme } from '../Theme';
 type TExtractUiFindFromStateReturn = {
     uiFind: string | undefined;

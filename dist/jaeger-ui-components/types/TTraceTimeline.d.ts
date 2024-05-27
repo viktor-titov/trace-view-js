@@ -1,6 +1,6 @@
 import DetailState from '../TraceTimelineViewer/SpanDetail/DetailState';
-import TNil from './TNil';
-type TTraceTimeline = {
+import { TNil } from './TNil';
+export type TTraceTimeline = {
     childrenHiddenIDs: Set<string>;
     detailStates: Map<string, DetailState>;
     hoverIndentGuideIds: Set<string>;
@@ -8,4 +8,3 @@ type TTraceTimeline = {
     spanNameColumnWidth: number;
     traceID: string | TNil;
 };
-export default TTraceTimeline;

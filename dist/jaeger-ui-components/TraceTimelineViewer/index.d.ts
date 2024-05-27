@@ -3,7 +3,7 @@ import { Accessors } from '../ScrollManager';
 import { TUpdateViewRangeTimeFunction, ViewRange, ViewRangeTimeUpdate } from './types';
 import { TNil } from '../types';
 import { Span, Trace, Log, KeyValuePair, Link } from '../types/trace';
-import TTraceTimeline from '../types/TTraceTimeline';
+import { TTraceTimeline } from '../types/TTraceTimeline';
 import { Theme } from '../Theme';
 type TExtractUiFindFromStateReturn = {
     uiFind: string | undefined;

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { TUpdateViewRangeTimeFunction, ViewRange, ViewRangeTimeUpdate } from '..';
 import { TNil } from '../types';
 import { Trace } from '..';
-type TracePageHeaderEmbedProps = {
+export type TracePageHeaderEmbedProps = {
     canCollapse: boolean;
     clearSearch: () => void;
     focusUiFindMatches: () => void;
@@ -34,4 +34,3 @@ export declare const HEADER_ITEMS: ({
     renderer: (trace: Trace) => number;
 })[];
 export default function TracePageHeader(props: TracePageHeaderEmbedProps): React.JSX.Element;
-export {};

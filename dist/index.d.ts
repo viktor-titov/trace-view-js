@@ -1,2 +1,2 @@
-import { TraceViewTest } from "./TraceView";
-export { TraceViewTest };
+import { TraceViewTest } from "./TraceViewTest";
+export { TraceViewTest, };

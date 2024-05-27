@@ -1,2 +1,1 @@
-type TNil = null | undefined;
-export default TNil;
+export type TNil = null | undefined;

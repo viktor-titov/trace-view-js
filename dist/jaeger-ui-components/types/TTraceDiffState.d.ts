@@ -1,4 +1,4 @@
-import TNil from './TNil';
+import { TNil } from "./TNil";
 type TTraceDiffState = {
     a?: string | TNil;
     b?: string | TNil;
