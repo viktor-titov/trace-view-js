@@ -17,6 +17,7 @@
         ".vscode",
         "webpack",
         "dist",
+        "examples",
         "./src/**/*.test.ts",
         "./src/**/*.test.tsx",
         "**/*.test.ts*"

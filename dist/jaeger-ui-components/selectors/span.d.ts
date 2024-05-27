@@ -1,0 +1,13 @@
+export function getSpanId(span: any): any;
+export function getSpanName(span: any): any;
+export function getSpanDuration(span: any): any;
+export function getSpanTimestamp(span: any): any;
+export function getSpanProcessId(span: any): any;
+export function getSpanReferences(span: any): any;
+export const getSpanReferenceByType: any;
+export const getSpanParentId: any;
+export function getSpanProcess(span: any): any;
+export const getSpanServiceName: any;
+export const filterSpansForTimestamps: any;
+export const filterSpansForText: any;
+export const highlightSpansForTextFilter: any;
