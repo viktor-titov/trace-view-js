@@ -16,7 +16,7 @@ import React from 'react';
 
 import { DraggableBounds, DraggingUpdate } from '..';
 import DraggableManager from '../DraggableManager';
-import TNil from '../../../types/TNil';
+import { TNil } from 'jaeger-ui-components/types';
 
 import './DividerDemo.css';
 

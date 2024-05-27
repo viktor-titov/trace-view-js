@@ -133,7 +133,7 @@ const getStyles = createStyle((theme: Theme) => {
   };
 });
 
-type TracePageHeaderEmbedProps = {
+export type TracePageHeaderEmbedProps = {
   canCollapse: boolean;
   clearSearch: () => void;
   focusUiFindMatches: () => void;

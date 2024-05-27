@@ -30,7 +30,7 @@ import { Accessors } from '../ScrollManager';
 import { getColorByKey } from '../utils/color-generator';
 import { TNil } from '../types';
 import { Log, Span, Trace, KeyValuePair, Link } from '../types/trace';
-import TTraceTimeline from '../types/TTraceTimeline';
+import { TTraceTimeline } from '../types/TTraceTimeline';
 
 import { createStyle, Theme, withTheme } from '../Theme';
 

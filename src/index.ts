@@ -1,5 +1,5 @@
-import { TraceViewTest } from "./TraceView"
+import { TraceViewTest } from "./TraceViewTest"
 
 export {
-    TraceViewTest
+    TraceViewTest,
 }

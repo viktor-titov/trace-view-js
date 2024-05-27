@@ -13,9 +13,9 @@
 // limitations under the License.
 
 import DetailState from '../TraceTimelineViewer/SpanDetail/DetailState';
-import TNil from './TNil';
+import { TNil } from './TNil';
 
-type TTraceTimeline = {
+export type TTraceTimeline = {
   childrenHiddenIDs: Set<string>;
   detailStates: Map<string, DetailState>;
   hoverIndentGuideIds: Set<string>;
@@ -24,5 +24,3 @@ type TTraceTimeline = {
   traceID: string | TNil;
 };
 
-// eslint-disable-next-line no-undef
-export default TTraceTimeline;
