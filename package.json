@@ -1,6 +1,6 @@
 {
   "name": "@viktor-titov/trace-view-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "View Trace with spans.",
   "author": "Viktor Titov",
   "homepage": "https://github.com/viktor-titov/trace-view-js",
@@ -22,9 +22,9 @@
     ".": {
       "umd": "./dist/trace-view-js.umd.js",
       "require": "./dist/trace-view-js.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./": "./dist/trace-view-js.module.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/trace-view-js.module.js"
+    }
   },
   "scripts": {
     "clean": "rimraf dist",
