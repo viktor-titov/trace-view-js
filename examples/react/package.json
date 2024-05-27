@@ -56,6 +56,7 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   },
-  "dependencies": {}
-
+  "dependencies": {
+    "@viktor-titov/trace-view-js": "file:../../"
+  }
 }
