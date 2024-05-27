@@ -1,13 +1,12 @@
 {
-  "name": "example-react",
+  "name": "example-trace-view-with-react",
   "version": "1.0.0",
-  "description": "Example react",
+  "description": "Example using Trace view with React",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode=development --open --hot"
   },
   "author": "Viktor Titov",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/plugin-transform-runtime": "^7.17.0",

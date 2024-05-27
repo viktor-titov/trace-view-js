@@ -1,6 +1,7 @@
 {
-  "name": "ng-jaeger",
-  "version": "0.0.0",
+  "name": "example-trace-view-with-angular",
+  "version": "1.0.0",
+  "description": "Example using Trace view with angular",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

@@ -1,3 +1,17 @@
-# 🚀 Example with react
+# Example Trace view with React
 
-Пример использованя с React.
+Пример использования `Trace view` в `React`
+
+## Preparing
+
+```bash
+npm install
+```
+
+## Start
+
+For start viewing example:
+
+```bash
+npm run start
+```
