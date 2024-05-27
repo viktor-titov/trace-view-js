@@ -1,6 +1,6 @@
 {
   "name": "@viktor-titov/trace-view-js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "View Trace with spans.",
   "author": "Viktor Titov",
   "homepage": "https://github.com/viktor-titov/trace-view-js",
@@ -29,9 +29,10 @@
   "scripts": {
     "clean": "rimraf dist",
     "typecheck": "tsc --noEmit",
-    "build:types": "tsc --emitDeclarationOnly --outfile 'dist/index'",
+    "build:types": "tsc --emitDeclarationOnly",
     "build:bundle": "webpack --mode=production --config=./webpack/lib.config.js",
-    "build": "npm run clean && npm run build:types && npm run build:bundle"
+    "build": "npm run clean && npm run build:types && npm run build:bundle",
+    "bundle:analyzer": "webpack --mode=production --config=./webpack/lib.analyzer.config.js"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.24.6",
