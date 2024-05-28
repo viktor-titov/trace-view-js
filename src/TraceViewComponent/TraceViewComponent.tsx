@@ -1,9 +1,10 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { useTheme } from '@grafana/ui';
+
 import {
   KeyValuePair,
   Link,
   Span,
-  SpanData,
   ThemeOptions,
   ThemeProvider,
   ThemeType,
@@ -17,25 +18,21 @@ import {
 } from '../jaeger-ui-components';
 
 import { UIElements } from './ui-elements';
-
 import { useViewRange } from './services/view-range';
-
 import { useSearch } from './services/search';
-
 import { useChildrenState } from './services/children-state';
-
 import { useDetailState } from './services/detail-state';
-
 import { useHoverIndentGuide } from './services/hover-indent-guide';
-
-import { useTheme } from '@grafana/ui';
 import { colors } from './utils/colors';
+import { TraceProps } from '../types/TraceProps';
 
-type Props = {
-  trace: TraceData & { spans: SpanData[] };
-};
+const emptyTrace: TraceProps["trace"] = {
+  traceID: "empty",
+  processes: {},
+  spans: [],
+} 
 
-export function TraceView(props: Props) {
+export function TraceViewComponent(props?: TraceProps) {
   const { expandOne, collapseOne, childrenToggle, collapseAll, childrenHiddenIDs, expandAll } = useChildrenState();
   const {
     detailStates,
@@ -59,7 +56,7 @@ export function TraceView(props: Props) {
    */
   const [slim, setSlim] = useState(false);
 
-  const traceProp = useMemo(() => transformTraceData(props.trace), [props.trace]);
+  const traceProp = useMemo(() => transformTraceData(props.trace ?? emptyTrace), [props.trace]);
   const { search, setSearch, spanFindMatches } = useSearch(traceProp?.spans);
 
   const theme = useTheme();
