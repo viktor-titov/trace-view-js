@@ -1,4 +1,7 @@
-@if (loading) {
-    <div>loading...</div>
-}
+<div>
+    <button (click)="updateHandler()">generate random trace</button>
+</div>
 <div #boxForTrace></div>
+@if (loading) {
+    <div class="loading">loading...</div>
+}
