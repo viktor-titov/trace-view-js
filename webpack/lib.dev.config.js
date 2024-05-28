@@ -13,7 +13,7 @@ const DIST_PATH = resolve(__dirname, '..', 'dist');
 const libConfig = merge(common,
     {
         mode: "development",
-        devtool: "cheap-module-source-map",
+        devtool: "inline-source-map",
         optimization: {
             minimize: false,
         },
