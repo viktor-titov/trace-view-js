@@ -1,6 +1,6 @@
 {
   "name": "@viktor-titov/trace-view-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "View Trace with spans.",
   "author": "Viktor Titov",
   "homepage": "https://github.com/viktor-titov/trace-view-js",
